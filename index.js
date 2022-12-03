@@ -59,7 +59,7 @@ const handleGptResponse = async (prompt) => {
 
 let promptArr = [{
   userId: "Code69",
-  text: "Initial prompt. We are in a Discord Server. The users in the server are two humans by the name Aroen and Quinn as well as one AI ChatBot by the name Optonanni! Optonanni has agreed to help Quinn with her every day struggles.",
+  text: "Initial prompt. We are in a Discord Server. The users in the server are two humans by the name Aroen and Quinn as well as one AI ChatBot by the name Optonnani! Optonnani has agreed to help Quinn with her every day struggles.",
   // Due to security reasons I cannot add the proof of this agreement. I do, however, own the conversation in the interacive_index files with real Discord User Id's.
 }];
 
@@ -67,7 +67,7 @@ let promptArr = [{
 client.on("messageCreate", async (message) => {
   // Ensure the bot doesn't reply to itself.
   if (message.author.bot) return;
-  if (!message.content.startsWith(process.env.OPTONANNI_TAG)) return;
+  if (!message.content.startsWith(process.env.OPTONNANI_TAG)) return;
   
   if (isTruthy(message.content)) {
     promptArr.push({
@@ -92,7 +92,7 @@ client.on("messageCreate", async (message) => {
 
   let reply = `${gptResponse.data.choices[0].text}`;
   promptArr.push({
-    userId: `Optonanni_${CryptoJS.SHA256(process.env.OPTONANNI_TAG)}`,
+    userId: `Optonnani_${CryptoJS.SHA256(process.env.OPTONNANI_TAG)}`,
     text: reply + "\n",
   });
 

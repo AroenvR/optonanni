@@ -1,7 +1,7 @@
 {
   "name": "openai-chatbot",
   "version": "0.1.0",
-  "description": "The Node server to the discord-api-chatbot 'Optonanni'",
+  "description": "The Node server to the discord-api-chatbot 'Optonnani'",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +11,7 @@
   "license": "ISC",
   "_project_question": [
     {
-      "question": "Copilot, what do you think about DALL-E 2's name for GPT-3's Discord username: Optonanni?",
+      "question": "Copilot, what do you think about DALL-E 2's name for GPT-3's Discord username: Optonnani?",
       "answer": "I think it's a great name for GPT-3's Discord username.",
       "confidence": 0.9999999999999999
     }

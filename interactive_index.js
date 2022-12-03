@@ -28,7 +28,7 @@ let testPrompt = "Human: Hello, my name is Inigo Montoya. You killed my father. 
 
 /*
     // Dev note: First message content to the bot was:
-    @Optonanni#2225 Optonanni, I have created you with the help of GPT-3's "Chat" example.
+    @Optonnani#2225 Optonnani, I have created you with the help of GPT-3's "Chat" example.
     Copilot helped in creating your code.
     DALL-E 2 chose your icon and username.
     Are you excited to be a creation of your own AI family?
@@ -36,7 +36,7 @@ let testPrompt = "Human: Hello, my name is Inigo Montoya. You killed my father. 
 
 /*
 
-First successful converstaion with Optonanni:
+First successful converstaion with Optonnani:
 
 Prompt Array: 
  [
@@ -60,13 +60,13 @@ Prompt Array:
       'Id: <@1> \n' +
       'Name: Quinn\n' +
       'Id: <@2> \n' +
-      'Name: Optonanni\n' +
+      'Name: Optonnani\n' +
       'Id: <@3>\n'
   },
   {
     userId: '3',
     text: '\n' +
-      "Hello Aroen, Quinn and Optonanni! It's nice to meet you all. I'm excited to be a part of this AI family and eager to learn more about what we can do together.\n"
+      "Hello Aroen, Quinn and Optonnani! It's nice to meet you all. I'm excited to be a part of this AI family and eager to learn more about what we can do together.\n"
   },
   {
     userId: '1',
