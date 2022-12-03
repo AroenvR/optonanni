@@ -1,4 +1,5 @@
 require('dotenv').config();
+let CryptoJS = require("crypto-js");
 
 // Discord client setup.
 const { Client, GatewayIntentBits } = require('discord.js');
@@ -66,10 +67,11 @@ let promptArr = [{
 client.on("messageCreate", async (message) => {
   // Ensure the bot doesn't reply to itself.
   if (message.author.bot) return;
+  if (!message.content.startsWith(process.env.OPTONANNI_TAG)) return;
   
   if (isTruthy(message.content)) {
     promptArr.push({
-      userId: message.author.id,
+      userId: message.author.username + "_" + CryptoJS.SHA256(message.author.id),
       text: `${message.content}\n`,
     });
   } 
@@ -90,7 +92,7 @@ client.on("messageCreate", async (message) => {
 
   let reply = `${gptResponse.data.choices[0].text}`;
   promptArr.push({
-    userId: process.env.BOT_ID,
+    userId: `Optonanni_${CryptoJS.SHA256(process.env.OPTONANNI_TAG)}`,
     text: reply + "\n",
   });
 
