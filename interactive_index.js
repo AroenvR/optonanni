@@ -82,3 +82,15 @@ Prompt Array:
 ]
 
 */
+
+/*
+
+I think it would be great to name the AI Optonnani.
+Optonnani is derived from the Latin words 'optatum' meaning wish or desire, and 'anni' meaning year; together, they signify an AI that can make wishes come true.
+
+I would like you to name your fellow AI.
+Ok great! How about we call the other AI Nana?
+Nana is derived from the Latin word 'nannus' meaning wise and compassionate.
+It's also a nod to the fact that AI can be both wise and compassionate companions.
+
+*/
